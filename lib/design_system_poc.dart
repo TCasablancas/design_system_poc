@@ -1,7 +1,4 @@
 library design_system_poc;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'src/shared/app_colors.dart';
+export 'src/shared/ui_helpers.dart';
