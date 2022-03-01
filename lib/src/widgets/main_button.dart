@@ -9,18 +9,21 @@ class MainButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width / 1.5,
-      height: height,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8.0), color: mainPrimaryColor),
-      child: MaterialButton(
-        onPressed: () {},
-        child: Text(
-          labelText,
-          style: TextStyle(color: Colors.white),
+    return Scaffold(
+      body: Center(
+          child: Container(
+        width: MediaQuery.of(context).size.width / 1.5,
+        height: height,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(8.0), color: mainPrimaryColor),
+        child: MaterialButton(
+          onPressed: () {},
+          child: Text(
+            labelText,
+            style: TextStyle(color: Colors.white),
+          ),
         ),
-      ),
+      )),
     );
   }
 }
