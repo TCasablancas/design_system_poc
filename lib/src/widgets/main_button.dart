@@ -1,11 +1,11 @@
 import 'package:design_system_poc/src/shared/app_colors.dart';
 import 'package:flutter/material.dart';
 
-class MainPocButton extends StatelessWidget {
+class MainButton extends StatelessWidget {
   final String labelText;
   final double height;
 
-  const MainPocButton({required this.labelText, required this.height});
+  const MainButton({required this.labelText, required this.height});
 
   @override
   Widget build(BuildContext context) {
