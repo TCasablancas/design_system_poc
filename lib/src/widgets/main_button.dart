@@ -12,7 +12,7 @@ class MainButton extends StatelessWidget {
     return Scaffold(
       body: Center(
           child: Container(
-        width: MediaQuery.of(context).size.width / 1.5,
+        width: MediaQuery.of(context).size.width,
         height: height,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8.0), color: mainPrimaryColor),
