@@ -22,19 +22,28 @@ class MainButton extends StatelessWidget {
       required this.action});
   @override
   Widget build(BuildContext context) => Padding(
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       child: Container(
         width: width,
         height: height,
-        child: Center(
-            child: TextButton(
-          onPressed: () => action,
-          child: Text(labelText,
-              style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16)),
-        )),
+        child: GestureDetector(
+          onTap: action,
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 350),
+            width: double.infinity,
+            height: double.infinity,
+            alignment: Alignment.center,
+            child: Center(
+                child: TextButton(
+              onPressed: () => action,
+              child: Text(labelText,
+                  style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16)),
+            )),
+          ),
+        ),
         decoration: BoxDecoration(
             color: backgroundColor,
             borderRadius: BorderRadius.circular(10),
