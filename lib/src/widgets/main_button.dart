@@ -20,7 +20,12 @@ class MainButton extends StatelessWidget {
   Widget build(BuildContext context) => Container(
         width: width,
         height: height,
-        child: Center(child: Text(labelText)),
+        child: Center(
+            child: Text(labelText,
+                style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16))),
         decoration: BoxDecoration(
             color: backgroundColor,
             borderRadius: BorderRadius.circular(10),
