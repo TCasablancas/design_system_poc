@@ -17,7 +17,9 @@ class MainButton extends StatelessWidget {
       required this.borderColor});
 
   @override
-  Widget build(BuildContext context) => Container(
+  Widget build(BuildContext context) => Padding(
+      padding: EdgeInsets.all(16),
+      child: Container(
         width: width,
         height: height,
         child: Center(
@@ -30,5 +32,5 @@ class MainButton extends StatelessWidget {
             color: backgroundColor,
             borderRadius: BorderRadius.circular(10),
             border: Border.all(color: borderColor, width: 1.0)),
-      );
+      ));
 }
