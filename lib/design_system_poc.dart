@@ -8,3 +8,4 @@ export 'src/widgets/main_slider_container.dart';
 export 'src/widgets/main_slider.dart';
 export 'src/widgets/main_button.dart';
 export 'src/widgets/main_card.dart';
+export 'src/widgets/main_textInput.dart';
