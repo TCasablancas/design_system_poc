@@ -37,7 +37,7 @@ class MainButton extends StatelessWidget {
                 border: Border.all(color: borderColor, width: 1.0)),
             child: Center(
                 child: TextButton(
-              onPressed: () => action,
+              onPressed: action,
               child: Text(labelText,
                   style: const TextStyle(
                       color: Colors.white,
