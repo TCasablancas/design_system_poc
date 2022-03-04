@@ -1,14 +1,14 @@
+import 'package:design_system_poc/design_system_poc.dart';
 import 'package:flutter/material.dart';
 
 class MainSliderContainer extends StatelessWidget {
-  final Widget sliderWidget;
+  final Widget cards;
 
-  const MainSliderContainer({ required this.sliderWidget })
+  const MainSliderContainer({required this.cards});
 
-  // ignore: empty_constructor_bodies
   @override
   Widget build(BuildContext context) => Container(
-    color: Colors.black26,
-    child: sliderWidget,
-  );
+        color: Colors.black26,
+        child: MainSlider(cards: cards),
+      );
 }
