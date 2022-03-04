@@ -20,12 +20,10 @@ class MainButton extends StatelessWidget {
       required this.backgroundColor,
       required this.borderColor,
       required this.action});
+
   @override
   Widget build(BuildContext context) => Padding(
-      padding: const EdgeInsets.all(16),
-      child: Container(
-        width: width,
-        height: height,
+        padding: const EdgeInsets.all(16),
         child: GestureDetector(
           onTap: action,
           child: AnimatedContainer(
@@ -33,6 +31,10 @@ class MainButton extends StatelessWidget {
             width: double.infinity,
             height: double.infinity,
             alignment: Alignment.center,
+            decoration: BoxDecoration(
+                color: backgroundColor,
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: borderColor, width: 1.0)),
             child: Center(
                 child: TextButton(
               onPressed: () => action,
@@ -44,9 +46,5 @@ class MainButton extends StatelessWidget {
             )),
           ),
         ),
-        decoration: BoxDecoration(
-            color: backgroundColor,
-            borderRadius: BorderRadius.circular(10),
-            border: Border.all(color: borderColor, width: 1.0)),
-      ));
+      );
 }
