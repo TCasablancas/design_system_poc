@@ -1,24 +1,35 @@
 import 'dart:ffi';
 
+import 'package:design_system_poc/design_system_poc.dart';
 import 'package:design_system_poc/src/shared/app_colors.dart';
 
 import 'package:flutter/material.dart';
 
-class MainButton extends StatelessWidget {
-  final String labelText;
-  final double height;
-  final double width;
-  final Color backgroundColor;
-  final Color borderColor;
-  final void action;
+class MainButton extends StatefulWidget {
+  @override
+  MainButtonState createState() => MainButtonState();
+}
 
-  const MainButton(
-      {required this.labelText,
-      required this.height,
-      required this.width,
-      required this.backgroundColor,
-      required this.borderColor,
-      required this.action});
+class MainButtonState extends State<MainButton> {
+  late final String labelText;
+  late final double height;
+  late final double width;
+  late final Color backgroundColor;
+  late final Color borderColor;
+  late final void action;
+
+  // const MainButtonState(
+  //     {required this.labelText,
+  //     required this.height,
+  //     required this.width,
+  //     required this.backgroundColor,
+  //     required this.borderColor,
+  //     required this.action});
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) => Padding(
