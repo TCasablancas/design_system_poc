@@ -7,9 +7,9 @@ class MainSlider extends StatelessWidget {
   const MainSlider({required this.cards});
 
   @override
-  Widget build(BuildContext context) => SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        padding: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
-        child: Row(children: [cards]),
-      );
+  Widget build(BuildContext context) => ListView.builder(
+      scrollDirection: Axis.horizontal,
+      itemCount: 5,
+      padding: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+      itemBuilder: (BuildContext context, int index) => Row(children: [cards]));
 }
