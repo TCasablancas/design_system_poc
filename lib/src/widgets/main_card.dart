@@ -19,7 +19,7 @@ class MainCard extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-            width: MediaQuery.of(context).size.width - 32,
+            width: 220,
             height: 120,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
