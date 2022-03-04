@@ -28,8 +28,8 @@ class MainButton extends StatelessWidget {
           onTap: action,
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 350),
-            width: double.infinity,
-            height: double.infinity,
+            width: width,
+            height: height,
             alignment: Alignment.center,
             decoration: BoxDecoration(
                 color: backgroundColor,
