@@ -15,26 +15,20 @@ class MainCard extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) => Scaffold(
-        body: Container(
-            width: 220,
-            height: 120,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                color: mainPrimaryColor,
-                boxShadow: [
-                  BoxShadow(color: Colors.blueGrey, spreadRadius: 4)
-                ]),
-            child: Padding(
-                padding: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
-                child: Center(
-                    child: Text(
-                  boxTitle,
-                  style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w400,
-                      color: Colors.white),
-                  textAlign: TextAlign.center,
-                )))),
-      );
+  Widget build(BuildContext context) => Container(
+      width: 220,
+      height: 120,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8),
+          color: mainPrimaryColor,
+          boxShadow: [BoxShadow(color: Colors.blueGrey, spreadRadius: 4)]),
+      child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
+          child: Center(
+              child: Text(
+            boxTitle,
+            style: TextStyle(
+                fontSize: 16, fontWeight: FontWeight.w400, color: Colors.white),
+            textAlign: TextAlign.center,
+          ))));
 }
