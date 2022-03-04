@@ -15,10 +15,8 @@ class MainCard extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Container(
+  Widget build(BuildContext context) => Scaffold(
+        body: Container(
             width: 220,
             height: 120,
             decoration: BoxDecoration(
@@ -38,7 +36,5 @@ class MainCard extends StatelessWidget {
                       color: Colors.white),
                   textAlign: TextAlign.center,
                 )))),
-      ),
-    );
-  }
+      );
 }
