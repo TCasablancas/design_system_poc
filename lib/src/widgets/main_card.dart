@@ -1,9 +1,11 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/src/painting/border_radius.dart';
+
+import 'package:design_system_poc/design_system_poc.dart';
 import 'package:design_system_poc/src/shared/app_colors.dart';
 import 'package:design_system_poc/src/shared/app_dimensions.dart';
 import 'package:design_system_poc/src/shared/font_styles.dart';
 import 'package:design_system_poc/src/shared/ui_helpers.dart';
-import 'package:flutter/src/painting/border_radius.dart';
-import 'package:flutter/material.dart';
 
 class MainCard extends StatelessWidget {
   final String boxTitle;
@@ -14,13 +16,12 @@ class MainCard extends StatelessWidget {
     required this.background,
   });
 
-  @override
   Widget build(BuildContext context) => Container(
       width: 220,
       height: 120,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          color: mainPrimaryColor,
+          color: background,
           boxShadow: [BoxShadow(color: Colors.blueGrey, spreadRadius: 4)]),
       child: Padding(
           padding: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
