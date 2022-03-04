@@ -5,10 +5,7 @@ import 'package:design_system_poc/src/shared/app_colors.dart';
 
 import 'package:flutter/material.dart';
 
-class MainButton extends StatefulWidget {
-  @override
-  MainButtonState createState() => MainButtonState();
-
+class MainButton extends StatelessWidget {
   final String labelText;
   final double height;
   final double width;
@@ -23,21 +20,6 @@ class MainButton extends StatefulWidget {
       required this.backgroundColor,
       required this.borderColor,
       required this.action});
-}
-
-class MainButtonState extends State<MainButton> {
-  get width => width;
-  get labelText => labelText;
-  get height => height;
-  get backgroundColor => backgroundColor;
-  get borderColor => borderColor;
-  get action => action;
-
-  @override
-  void initState() {
-    super.initState();
-  }
-
   @override
   Widget build(BuildContext context) => Padding(
       padding: EdgeInsets.all(16),
