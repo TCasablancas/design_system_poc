@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:design_system_poc/src/shared/app_colors.dart';
 
 import 'package:flutter/material.dart';
@@ -8,13 +10,15 @@ class MainButton extends StatelessWidget {
   final double width;
   final Color backgroundColor;
   final Color borderColor;
+  final void action;
 
   const MainButton(
       {required this.labelText,
       required this.height,
       required this.width,
       required this.backgroundColor,
-      required this.borderColor});
+      required this.borderColor,
+      required this.action});
 
   @override
   Widget build(BuildContext context) => Padding(
@@ -24,7 +28,7 @@ class MainButton extends StatelessWidget {
         height: height,
         child: Center(
             child: TextButton(
-          onPressed: () {},
+          onPressed: () => action,
           child: Text(labelText,
               style: TextStyle(
                   color: Colors.white,
