@@ -19,7 +19,7 @@ class MainTextInput extends StatelessWidget {
       this.leading,
       this.trailing,
       this.password = false,
-      required this.trailingTapped})
+      this.trailingTapped})
       : super(key: key);
 
   @override
