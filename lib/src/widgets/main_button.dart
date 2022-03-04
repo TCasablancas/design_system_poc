@@ -14,7 +14,7 @@ class MainButton extends StatefulWidget {
   final double width;
   final Color backgroundColor;
   final Color borderColor;
-  final void action;
+  final void Function()? action;
 
   const MainButton(
       {required this.labelText,
