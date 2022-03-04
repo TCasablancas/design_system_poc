@@ -7,35 +7,33 @@ import 'package:flutter/material.dart';
 
 class MainButton extends StatefulWidget {
   @override
-  MainButtonState createState() => MainButtonState();
+  MainButtonState createState() => const MainButtonState();
 }
 
 class MainButtonState extends State<MainButton> {
-  late final String labelText;
-  late final double height;
-  late final double width;
-  late final Color backgroundColor;
-  late final Color borderColor;
-  late final void action;
-
-  // const MainButtonState(
-  //     {required this.labelText,
-  //     required this.height,
-  //     required this.width,
-  //     required this.backgroundColor,
-  //     required this.borderColor,
-  //     required this.action});
+  get width => width;
+  get labelText => labelText;
+  get height => height;
+  get backgroundColor => backgroundColor;
+  get borderColor => borderColor;
+  get action => action;
 
   @override
   void initState() {
     super.initState();
+    String labelText;
+    double height;
+    double width;
+    Color backgroundColor;
+    Color borderColor;
+    void action;
   }
 
   @override
   Widget build(BuildContext context) => Padding(
       padding: EdgeInsets.all(16),
       child: Container(
-        width: width,
+        width: this.width,
         height: height,
         child: Center(
             child: TextButton(
