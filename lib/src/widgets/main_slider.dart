@@ -10,7 +10,7 @@ class MainSlider extends StatelessWidget {
   Widget build(BuildContext context) => ListView.separated(
       scrollDirection: Axis.horizontal,
       itemCount: cards.length,
-      separatorBuilder: (context, _) => SizedBox(width: 15),
+      separatorBuilder: (context, _) => SizedBox(width: 20),
       padding: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
       itemBuilder: (BuildContext context, int index) => Row(children: cards));
 }
