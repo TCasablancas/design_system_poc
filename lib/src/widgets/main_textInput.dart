@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 class MainTextInput extends StatelessWidget {
   final TextEditingController controller;
+  final String labelText;
   final String placeholder;
   final Widget? leading;
   final Widget? trailing;
@@ -17,6 +18,7 @@ class MainTextInput extends StatelessWidget {
   MainTextInput(
       {Key? key,
       required this.controller,
+      this.labelText,
       this.placeholder = '',
       this.leading,
       this.trailing,
@@ -32,6 +34,7 @@ class MainTextInput extends StatelessWidget {
           style: TextStyle(height: 1),
           obscureText: password,
           decoration: InputDecoration(
+            labelText: labelText,
             hintText: placeholder,
             contentPadding: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
             filled: true,
