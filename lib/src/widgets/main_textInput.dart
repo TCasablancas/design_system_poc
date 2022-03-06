@@ -37,13 +37,13 @@ class MainTextInput extends StatelessWidget {
             filled: true,
             fillColor: Colors.black12,
             border: const UnderlineInputBorder(
-                borderSide: BorderSide(color: Colors.teal)),
+                borderSide: BorderSide(color: Colors.teal, width: 3)),
             errorBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: Colors.redAccent)),
+                borderSide: BorderSide(color: Colors.redAccent, width: 3)),
             focusedBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: Colors.teal)),
+                borderSide: BorderSide(color: Colors.teal, width: 3)),
             enabledBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: Colors.black45)),
+                borderSide: BorderSide(color: Colors.black45, width: 3)),
           ),
         ),
       );
