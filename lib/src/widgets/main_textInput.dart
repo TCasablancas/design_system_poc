@@ -37,7 +37,7 @@ class MainTextInput extends StatelessWidget {
             labelText: labelText,
             hintText: placeholder,
             contentPadding: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
-            filled: true,
+            filled: false,
             fillColor: Colors.black12,
             border: const UnderlineInputBorder(
                 borderSide: BorderSide(color: Colors.teal, width: 3)),
