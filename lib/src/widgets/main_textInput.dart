@@ -1,3 +1,5 @@
+import 'package:design_system_poc/design_system_poc.dart';
+import 'package:design_system_poc/src/shared/ui_helpers.dart';
 import 'package:flutter/material.dart';
 
 class MainTextInput extends StatelessWidget {
@@ -24,28 +26,25 @@ class MainTextInput extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Padding(
-      padding: EdgeInsets.all(16.0),
-      child: TextField(
-        controller: controller,
-        style: TextStyle(height: 1),
-        obscureText: password,
-        decoration: InputDecoration(
-          hintText: placeholder,
-          contentPadding: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
-          filled: true,
-          fillColor: Colors.black12,
-          border: circularBorder.copyWith(
-            borderSide: BorderSide(color: Colors.black26),
-          ),
-          errorBorder: circularBorder.copyWith(
-            borderSide: BorderSide(color: Colors.red),
-          ),
-          focusedBorder: circularBorder.copyWith(
-            borderSide: BorderSide(color: Colors.blueAccent),
-          ),
-          enabledBorder: circularBorder.copyWith(
-            borderSide: BorderSide(color: Colors.black54),
+        padding: EdgeInsets.all(16.0),
+        child: TextField(
+          controller: controller,
+          style: TextStyle(height: 1),
+          obscureText: password,
+          decoration: InputDecoration(
+            hintText: placeholder,
+            contentPadding: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+            filled: true,
+            fillColor: Colors.black12,
+            border: const UnderlineInputBorder(
+                borderSide: BorderSide(color: Colors.teal)),
+            errorBorder: const UnderlineInputBorder(
+                borderSide: BorderSide(color: Colors.redAccent)),
+            focusedBorder: const UnderlineInputBorder(
+                borderSide: BorderSide(color: Colors.teal)),
+            enabledBorder: const UnderlineInputBorder(
+                borderSide: BorderSide(color: Colors.black45)),
           ),
         ),
-      ));
+      );
 }
