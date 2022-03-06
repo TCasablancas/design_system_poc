@@ -23,7 +23,9 @@ class MainTextInput extends StatelessWidget {
       : super(key: key);
 
   @override
-  Widget build(BuildContext context) => TextField(
+  Widget build(BuildContext context) => Padding(
+      padding: EdgeInsets.all(16.0),
+      child: TextField(
         controller: controller,
         style: TextStyle(height: 1),
         obscureText: password,
@@ -45,5 +47,5 @@ class MainTextInput extends StatelessWidget {
             borderSide: BorderSide(color: Colors.black54),
           ),
         ),
-      );
+      ));
 }
