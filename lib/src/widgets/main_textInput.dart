@@ -18,7 +18,7 @@ class MainTextInput extends StatelessWidget {
   MainTextInput(
       {Key? key,
       required this.controller,
-      this.labelText,
+      required this.labelText,
       this.placeholder = '',
       this.leading,
       this.trailing,
